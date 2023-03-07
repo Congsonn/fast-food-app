@@ -220,7 +220,7 @@
                         android:id="@+id/textView17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Rỏ hàng"
+                        android:text="Giỏ hàng"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
@@ -234,7 +234,7 @@
                     android:visibility="visible">
 
                     <ImageView
-                        android:id="@+id/imageView9"
+                        android:id="@+id/imgToi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
