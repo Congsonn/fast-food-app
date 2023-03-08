@@ -29,202 +29,115 @@
         <TextView
             android:id="@+id/textToi"
             android:layout_width="110dp"
-            android:layout_height="32dp"
+            android:layout_height="39dp"
             android:layout_marginTop="10dp"
             android:layout_weight="3"
-            android:text="  ĐĂNG NHẬP. Rất nhiều món ngon đang chờ bạn !"
-            android:textColor="#9CFF9800"
-            android:textSize="13dp"
+            android:text="đăng nhập món ngon đang chờ bạn !"
+            android:textColor="#8AFF7E00"
+            android:textSize="17dp"
             android:textStyle="bold" />
 
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/l2"
         android:layout_width="match_parent"
-        android:layout_height="482dp"
+        android:layout_height="540dp"
         android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        android:id="@+id/l2">
+        android:orientation="vertical">
 
-        <LinearLayout
+
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="47dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/taikhoan"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:padding="15dp"
+            android:text="  Tài Khoản"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
 
-            <ImageView
-                android:id="@+id/imgticket"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ticket" />
 
-            <TextView
-                android:id="@+id/tvticket"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="3"
-                android:text="Ví Counpon"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/vitien"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_wallet"
+            android:padding="15dp"
+            android:text="   Ví Của Bạn "
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
 
-            <ImageView
-                android:id="@+id/imgwallet"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/wallet" />
-
-            <TextView
-                android:id="@+id/tvwallet"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="3"
-                android:text="    Quản lý thanh toán"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/voucher"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_voucher"
+            android:padding="15dp"
+            android:text="   Ticket Voucher"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
 
-            <ImageView
-                android:id="@+id/imgtaikhoan"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/taikhoan" />
-
-            <TextView
-                android:id="@+id/tvtaikhoan"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="3"
-                android:text="     Thông tin tài khoản"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/thongbao"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_doorbell"
+            android:padding="15dp"
+            android:text="   Thông Báo"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
 
-            <ImageView
-                android:id="@+id/imgdanhgia"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/star" />
-
-            <TextView
-                android:id="@+id/tvdanhgia"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="3"
-                android:text=" Đánh Giá"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/thongtin"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_privacy"
+            android:padding="15dp"
+            android:text="   Thông Tin Tài Khoản"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
 
-            <ImageView
-                android:id="@+id/imgthongbao"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/thongbao" />
-
-            <TextView
-                android:id="@+id/tvthongbao"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="3"
-                android:text="  Thông Báo"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/dieukhoan"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_chamthan"
+            android:padding="15dp"
+            android:text="   Điều Khoản Và Điều Lệ "
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
 
-            <ImageView
-                android:id="@+id/imghotro"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/hotro" />
-
-            <TextView
-                android:id="@+id/tvhotro"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="3"
-                android:text=" Hỗ Trợ"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/hotro"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_tainghe"
+            android:padding="15dp"
+            android:text="   Hỗ Trợ Khách Hàng"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
 
-            <ImageView
-                android:id="@+id/imgdieukhoan"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/chamthan" />
-
-            <TextView
-                android:id="@+id/tvdieukhoan"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="3"
-                android:text="Điều Khoản Và Chính Sách"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="italic" />
-        </LinearLayout>
 
         <TextView
             android:id="@+id/tvphienban"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_height="41dp"
+
             android:layout_marginTop="40dp"
-            android:text="Phiên bản hiện tại: v1.1.1                    >"
-            android:textSize="20dp" />
+            android:text="Phiên bản hiện tại: v1.1.1   "
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <Button
@@ -234,6 +147,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:backgroundTint="#8AFF7E00"
+        android:textStyle="bold"
         android:text="ĐĂNG XUẤT" />
 
 </LinearLayout>
