@@ -1,24 +1,29 @@
 package com.example.fastfood;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView.Adapter adapter,adapter2;
-    private RecyclerView recyclerViewdanhsachdoanList,recyclerViewdoanphobienList;
+    public RecyclerView.Adapter adapter,adapter2;
+    public RecyclerView recyclerViewdanhsachdoanList,recyclerViewdoanphobienList;
+    ImageView imgToi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        imgToi = (ImageView)findViewById(R.id.imgToi);
+        imgToi.setOnClickListener(v -> {
+            Intent mhtt = new Intent(MainActivity.this,thongtin.class);
+            startActivity(mhtt);
+        });
         recyclerViewdanhsachdoan();
         recyclerViewdoanphobien();
     }
