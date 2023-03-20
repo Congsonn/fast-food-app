@@ -5,88 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
     android:background="@drawable/login"
-    tools:context=".loginActivity"
-    >
+    tools:context=".loginActivity">
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="372dp"
-        android:layout_height="500dp"
-        android:layout_margin="26dp"
-        android:elevation="30dp"
-        app:cardCornerRadius="30dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="391dp"
-            android:layout_height="514dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/lavender"
-            android:orientation="vertical"
-            android:padding="25dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:textAlignment="center"
-                android:textColor="@color/lavender"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                android:layout_marginTop="30dp">
+                android:orientation="vertical"
+                android:layout_marginTop="350dp"
+                android:padding="20dp">
 
-            </TextView>
+                <EditText
+                    android:id="@+id/login_email"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/lavender"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Your Email"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/lavender"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Your Password"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
 
 
-            <EditText
-                android:id="@+id/login_user"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/lavender"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
-                android:drawablePadding="10dp"
-                android:hint="Username"
-                android:padding="8dp"
-                android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Login"
+                    android:textSize="16dp"
+                    app:cornerRadius="20dp" />
 
+                <TextView
+                    android:id="@+id/signup_text"
+                    android:layout_width="288dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    android:text="Chưa có tài khoản? Đăng Kí"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/login_password"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/lavender"
-                android:drawableLeft="@drawable/ic_baseline_email_24"
-                android:drawablePadding="10dp"
-                android:hint="Password"
-                android:padding="8dp"
-                android:textColor="@color/black" />
-
-            <Button
-                android:id="@+id/btn_login"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="30dp"
-                android:text="LOGIN"
-                android:textSize="16dp"
-                app:cornerRadius="20dp" />
-
-            <TextView
-                android:id="@+id/textread_login"
-                android:layout_width="261dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:padding="8dp"
-                android:text="Chưa Có Tài Khoản? Đăng Kí"
-                android:textSize="18sp" />
+            </LinearLayout>
 
 
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
+    </ScrollView>
 
 </LinearLayout>
