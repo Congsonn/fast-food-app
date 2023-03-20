@@ -32,9 +32,9 @@ public class loginActivity extends AppCompatActivity {
                 if(email.equals("") || password.equals(""))
                     Toast.makeText(loginActivity.this, "nhập gì đó ....", Toast.LENGTH_SHORT).show();
                 else{
-                    boolean checkCredentials = sql_database.check_email_password( email, password);
+                    boolean check_email_password = sql_database.check_email_password( email, password);
 
-                    if(checkCredentials == true){
+                    if(check_email_password == true){
                         Toast.makeText(loginActivity.this, "Đăng Nhập Thành Công", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
