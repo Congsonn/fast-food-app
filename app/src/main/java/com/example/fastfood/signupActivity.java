@@ -28,6 +28,8 @@ public class signupActivity extends AppCompatActivity {
                 String email = binding.signupEmail.getText().toString();
                 String password = binding.signupPassword.getText().toString();
                 String signup_confirm = binding.signupConfirm.getText().toString();
+                // xem cách anh log này
+                //System.out.println("hop la con bo: " + "|" + email + "|" + password + "|" + signup_confirm);
 
                 if(email.equals("") || password.equals("") || signup_confirm.equals(""))
                     Toast.makeText(signupActivity.this, "nhập gì đó ....", Toast.LENGTH_SHORT).show();
