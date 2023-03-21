@@ -39,13 +39,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".dangnhap"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".thongtin"
             android:exported="false">
             <meta-data
