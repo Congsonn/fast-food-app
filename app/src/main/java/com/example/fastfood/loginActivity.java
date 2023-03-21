@@ -30,16 +30,16 @@ public class loginActivity extends AppCompatActivity {
                 String password = binding.loginPassword.getText().toString();
 
                 if(email.equals("") || password.equals(""))
-                    Toast.makeText(loginActivity.this, "nhập gì đó ....", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(loginActivity.this, "Vui Lòng Nhập Thông Tin.", Toast.LENGTH_SHORT).show();
                 else{
                     boolean check_email_password = sql_database.check_email_password( email, password);
 
                     if(check_email_password == true){
-                        Toast.makeText(loginActivity.this, "Đăng Nhập Thành Công", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(loginActivity.this, "Đăng Nhập Thành Công.", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(loginActivity.this, "Thông Tin Không Hợp Lệ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(loginActivity.this, "Mật Khẩu Không Khớp.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

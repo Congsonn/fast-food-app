@@ -28,7 +28,6 @@ public class signupActivity extends AppCompatActivity {
                 String email = binding.signupEmail.getText().toString();
                 String password = binding.signupPassword.getText().toString();
                 String signup_confirm = binding.signupConfirm.getText().toString();
-                // xem cách anh log này
                 //System.out.println("hop la con bo: " + "|" + email + "|" + password + "|" + signup_confirm);
 
                 if(email.equals("") || password.equals("") || signup_confirm.equals(""))
@@ -41,17 +40,17 @@ public class signupActivity extends AppCompatActivity {
                             boolean insert = sql_database.insertData(email, password);
 
                             if (insert == true){
-                                Toast.makeText(signupActivity.this, "Đăng Kí Thành Công", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(signupActivity.this, "Đăng Kí Thành Công.", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), loginActivity.class);
                                 startActivity(intent);
                             }else {
-                                Toast.makeText(signupActivity.this, "Đăng Kí Thất Bại", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(signupActivity.this, "Đăng Kí Thất Bại.", Toast.LENGTH_SHORT).show();
                             }
                         }else{
-                            Toast.makeText(signupActivity.this, "Tài Khoản đã tồn tại", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(signupActivity.this, "Tài Khoản đã tồn tại.", Toast.LENGTH_SHORT).show();
                         }
                     }else {
-                        Toast.makeText(signupActivity.this, "Mật khẩu không hợp lệ ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(signupActivity.this, "Mật Khẩu Không Khớp", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
