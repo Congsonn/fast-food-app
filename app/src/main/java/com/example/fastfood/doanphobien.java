@@ -1,78 +1,58 @@
 package com.example.fastfood;
 
 public class doanphobien {
-    private String title;
-    private String pic;
-    private String description;
-    private Double fee;
-    private int star;
-    private int time;
-    private int calories;
+    int image;
+    String name;
+    String timing;
+    String rating;
+    String price;
 
-    public doanphobien(String title, String pic, String description, Double fee, int star, int time, int calories) {
-        this.title = title;
-        this.pic = pic;
-        this.description = description;
-        this.fee = fee;
-        this.star = star;
-        this.time = time;
-        this.calories = calories;
+    public doanphobien(int image, String name, String timing, String rating, String price) {
+        this.image = image;
+        this.name = name;
+        this.timing = timing;
+        this.rating = rating;
+        this.price = price;
     }
 
-    public String getTitle() {
-        return title;
+    public int getImage() {
+        return image;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setImage(int image) {
+        this.image = image;
     }
 
-    public String getPic() {
-        return pic;
+    public String getName() {
+        return name;
     }
 
-    public void setPic(String pic) {
-        this.pic = pic;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getTiming() {
+        return timing;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setTiming(String timing) {
+        this.timing = timing;
     }
 
-    public Double getFee() {
-        return fee;
+    public String getRating() {
+        return rating;
     }
 
-    public void setFee(Double fee) {
-        this.fee = fee;
+    public void setRating(String rating) {
+        this.rating = rating;
     }
 
-    public int getStar() {
-        return star;
+    public String getPrice() {
+        return price;
     }
 
-    public void setStar(int star) {
-        this.star = star;
-    }
-
-    public int getTime() {
-        return time;
-    }
-
-    public void setTime(int time) {
-        this.time = time;
-    }
-
-    public int getCalories() {
-        return calories;
-    }
-
-    public void setCalories(int calories) {
-        this.calories = calories;
+    public void setPrice(String price) {
+        this.price = price;
     }
 }
 
