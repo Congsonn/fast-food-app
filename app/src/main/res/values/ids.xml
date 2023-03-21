@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item name="title" type="id" />
+    <item name="pic" type="id" />
+    <item name="fee" type="id" />
+    <item name="addBtn" type="id" />
 </resources>

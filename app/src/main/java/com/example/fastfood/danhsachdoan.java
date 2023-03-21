@@ -1,27 +1,27 @@
 package com.example.fastfood;
 
 public class danhsachdoan {
-    private String title;
-    private String pic;
+   int pic;
+   String name;
 
-    public danhsachdoan(String title, String pic) {
-        this.title = title;
+    public danhsachdoan(int pic, String name) {
         this.pic = pic;
+        this.name = name;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getPic() {
+    public int getPic() {
         return pic;
     }
 
-    public void setPic(String pic) {
+    public void setPic(int pic) {
         this.pic = pic;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
