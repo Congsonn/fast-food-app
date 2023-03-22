@@ -61,7 +61,7 @@ public class danhsachdoanAdapter extends RecyclerView.Adapter<danhsachdoanAdapte
                    if (position == 0){
 
                        ArrayList<doanphobien> doanphobiens = new ArrayList<>();
-                       doanphobiens.add(new doanphobien(R.drawable.pizza1,"Pizza rau củ ","10:00 - 23:00","5.0","85.000VNĐ"));
+                       doanphobiens.add(new doanphobien(R.drawable.pizza1,"Pizza rau củ ","10:00 - 23:00","5.0","55.000VNĐ"));
                        doanphobiens.add(new doanphobien(R.drawable.pizza2,"Pizza xúc xích","10:00 - 23:00","5.0","100.000VNĐ"));
                        doanphobiens.add(new doanphobien(R.drawable.pizza3,"Pizza hải sản ","10:00 - 23:00","5.0","125.000VNĐ"));
                        doanphobiens.add(new doanphobien(R.drawable.pizza4,"Pizza thập cẩm ","10:00 - 23:00","5.0","150.000VNĐ"));

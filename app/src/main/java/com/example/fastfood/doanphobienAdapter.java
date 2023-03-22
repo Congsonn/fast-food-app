@@ -53,7 +53,7 @@ public class doanphobienAdapter extends RecyclerView.Adapter<doanphobienAdapter.
             name = itemView.findViewById(R.id.name);
             timing = itemView.findViewById(R.id.timing);
             rating = itemView.findViewById(R.id.rating);
-            price = itemView.findViewById(R.id.price);
+            price = itemView.findViewById(R.id.Price);
         }
     }
 }

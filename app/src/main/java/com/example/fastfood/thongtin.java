@@ -23,7 +23,7 @@ public class thongtin extends AppCompatActivity {
         clicklogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent click_login = new Intent(thongtin.this, loginActivity.class);
+                Intent click_login = new Intent(thongtin.this, MainActivity.class);
                 startActivity(click_login);
             }
         });
