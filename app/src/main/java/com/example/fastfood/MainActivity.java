@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements updatedapb {
 
     doanphobienAdapter doanphobienAdapter;
 
-    ImageView imgToi;
+    ImageView imgToi, giohang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements updatedapb {
         danhsachdoanList = new ArrayList<>();
         danhsachdoanList.add(new danhsachdoan(R.drawable.cat_1,"Pizza"));
         danhsachdoanList.add(new danhsachdoan(R.drawable.cat_2,"HamBurger"));
-        danhsachdoanList.add(new danhsachdoan(R.drawable.banhmi,"Bánh mì"));
+        danhsachdoanList.add(new danhsachdoan(R.drawable.bread,"Bánh mì"));
         danhsachdoanList.add(new danhsachdoan(R.drawable.cat_4,"Drink"));
         danhsachdoanList.add(new danhsachdoan(R.drawable.duiga,"Đùi gà"));
 
@@ -61,6 +61,13 @@ public class MainActivity extends AppCompatActivity implements updatedapb {
             Intent mhtt = new Intent(MainActivity.this,thongtin.class);
             startActivity(mhtt);
         });
+
+        giohang = (ImageView)findViewById(R.id.btn_giohang);
+        giohang.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this,GiohangActivity.class);
+            startActivity(intent);
+        });
+
 
     }
 

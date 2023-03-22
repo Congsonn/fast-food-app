@@ -49,7 +49,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Oder Now"
+            android:text="ODER NOW"
             android:textColor="#D3FF9800"
             android:textSize="25sp"
             android:textStyle="bold"
